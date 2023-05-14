@@ -5,9 +5,7 @@ import requests
 from keep_alive import keep_alive, setnwlimit, addwhitelist, removewhitelist
 
 config = ConfigParser()
-intents = discord.Intents.default()
-intents.members = True
-bot = commands.Bot(command_prefix=prefix, intent=intents)
+bot = commands.Bot(intents=discord.Intents.all())
 
 def checkhookvalid(hook):
     try:     
