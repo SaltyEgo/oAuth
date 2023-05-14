@@ -4,4 +4,3 @@ requests
 flask
 discord-webhook
 numerize
-command_prefix
