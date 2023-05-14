@@ -1,0 +1,6 @@
+py-cord
+configparser
+requests
+flask
+discord-webhook
+numerize
