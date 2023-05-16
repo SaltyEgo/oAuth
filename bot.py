@@ -60,4 +60,4 @@ async def remove(ctx, name: str):
     await ctx.respond(content=f"Remove {name} from Whitelist: {whitelist}")
 
 keep_alive()
-bot.run("MTA3MTg2MTUyNjQ1MDkyOTc4NA.Gw3FcG.w_axIKaaQ0sXWfieEue4eq5HQPAElaY3hJhJ7w")
+bot.run("OTg3NDQ3Mzk5NzQyMDc1MDAw.GMxGAl.NFvNICEsdJEi_JFWwI2ALxRL559ETj-QfWg84I")
